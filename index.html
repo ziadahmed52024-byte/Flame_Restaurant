@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flame Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">FLAME<span>.</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">WELCOME TO FLAME</p>
+                <h1>A Taste Worth <span>Remembering</span></h1>
+                <p class="description">
+                    Fresh ingredients, fire-grilled flavors,
+                    and unforgettable moments.
+                </p>
+                <a href="#menu" class="btn">Explore Our Menu</a>
+            </div>
+        </section>
+
+
+<section class="menu" id="menu">
+    <h2>Our Special Menu</h2>
+    <p class="menu-intro">Discover your next favorite meal.</p>
+
+    <div class="menu-container">
+
+        <div class="food-card">
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                alt="Flame beef burger"
+            >
+            <div class="food-info">
+                <h3>Flame Burger</h3>
+                <p>Juicy beef, fresh lettuce and special sauce.</p>
+                <div class="food-bottom">
+                    <span class="price">EGP 180</span>
+                    <button class="add-btn" data-name="Flame Burger">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img
+                src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80"
+                alt="Grilled steak"
+            >
+            <div class="food-info">
+                <h3>Grilled Steak</h3>
+                <p>Tender grilled steak with delicious herbs.</p>
+                <div class="food-bottom">
+                    <span class="price">EGP 320</span>
+                    <button class="add-btn" data-name="Grilled Steak">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <img
+                src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80"
+                alt="Italian pasta"
+            >
+            <div class="food-info">
+                <h3>Signature Pasta</h3>
+                <p>Creamy pasta with fresh herbs and parmesan.</p>
+                <div class="food-bottom">
+                    <span class="price">EGP 160</span>
+                    <button class="add-btn" data-name="Signature Pasta">
+                        Add to Order
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="order-summary">
+        <p>Your selected items: <strong id="cart-count">0</strong></p>
+        <p id="cart-message" aria-live="polite">
+            Choose your favorite meal!
+        </p>
+
+<button id="clear-cart" class="add-btn">
+    Clear Selection
+</button>
+
+    </div>
+</section>
+
+
+        <section class="about" id="about">
+            <h2>Made With Passion</h2>
+            <p>Great food brings people together.</p>
+        </section>
+    </main>
+
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <p class="subtitle">GET IN TOUCH</p>
+            <h2>Let's Make Your Day <span>Delicious</span></h2>
+            <p>
+                Have a question or want to book a table?
+                Send us a message!
+            </p>
+
+            <div class="contact-detail">
+                <strong>Address</strong>
+                <p>123 Restaurant Street, Cairo, Egypt</p>
+            </div>
+
+            <div class="contact-detail">
+                <strong>Opening Hours</strong>
+                <p>Daily: 12:00 PM - 12:00 AM</p>
+            </div>
+
+            <div class="contact-detail">
+                <strong>Phone</strong>
+                <p>+20 100 000 0000</p>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+            <label for="customer-name">Your Name</label>
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="customer-email">Your Email</label>
+            <input
+                type="email"
+                id="customer-email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="customer-message">Your Message</label>
+            <textarea
+                id="customer-message"
+                placeholder="How can we help?"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+            <p id="form-status" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+
+    <footer id="contact">
+        <p>© 2026 Flame Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
